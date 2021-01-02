@@ -24,4 +24,4 @@
 - Express
 - HTML
 - CSS
-- JavascriptF
+- Javascript
