@@ -1,8 +1,8 @@
-import express from "express";
-const router = express.Router();
+import { Router, Request, Response, NextFunction } from "express";
+const router = Router();
 
-router.get("/", (req, res) => {
-    return res.render("index", { user: "This is the rocket leageu" });
+router.get("/", (req: Request, res: Response, next: NextFunction) => {
+    return res.render("index", { user: "This is the rocket league" });
 });
 
 export { router as authRoutes };
