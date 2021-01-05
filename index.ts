@@ -1,6 +1,6 @@
 import { PORT, app } from "./config/config";
-import { authRoutes } from "./routes/authRoutes";
+import { genericRoutes } from "./routes/generic.routes";
 
-app.use("/", authRoutes);
+app.use("/", genericRoutes);
 
 app.listen(PORT, () => console.log(`Server Now Running on Port: ${PORT}`));

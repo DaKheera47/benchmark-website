@@ -1,0 +1,15 @@
+<h1>this is the login page</h1>
+
+<form action="/login" method="post">
+    <input type="text" placeholder="Username" name="username">
+    <input type="password" placeholder="Password" name="password">
+    <button type="submit">Submit</button>
+</form>
+
+<% if (message !=="undefined" ) { %>
+    <p>
+        <%= message %>
+    </p>
+<% } %>
+
+<a href="/">Go to index page</a>
