@@ -1,11 +1,8 @@
 import { Router } from "express";
-import { indexController } from "../controllers/generic.controller";
-import { loginGet, loginPost } from "../controllers/auth.controller";
+import { indexGet } from "../controllers/generic.controller";
 
 const router = Router();
 
-router.get("/", indexController);
-router.get("/login", loginGet);
-router.post("/login", loginPost);
+router.get("/", indexGet);
 
 export { router as genericRoutes };

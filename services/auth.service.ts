@@ -1,5 +1,16 @@
-import { Request, Response } from "express";
+import { userModel } from "../models/index.model";
 
-export const handleLoginPost = (req: Request, res: Response) => {
-    // db logic goes here
+interface User {
+    fullName: String;
+    email: String;
+    password: String;
+}
+
+export const createNewUser = async (user: User) => {
+    const newUser = await userModel.create(user);
+    return newUser;
+};
+
+export const findAllUsers = async () => {
+    return await userModel.find();
 };

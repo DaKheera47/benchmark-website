@@ -1,16 +1,14 @@
-<h1>this is the login page</h1>
-
-<form action="/login" method="post">
+<h1>This is the signup page!</h1>
+<form action="/signup" method="post">
     <input type="email" placeholder="Email" name="email">
     <input type="password" placeholder="Password" name="password">
     <input type="text" placeholder="Full Name" name="fullName">
-    <button type="submit">Submit</button>
-</form>
 
+    <button type="submit">Submit!</button>
+</form>
 <% if (message !=="undefined" ) { %>
     <p>
         <%= message %>
     </p>
 <% } %>
-
-<a href="/">Go to index page</a>
+<a href="/">Go back to the index page!</a>
